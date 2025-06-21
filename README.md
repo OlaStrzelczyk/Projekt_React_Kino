@@ -7,19 +7,19 @@ A full-stack web application for managing movie reservations in a cinema. The sy
 ## 🎬 Podgląd aplikacji
 
 ### 🏠 Strona główna
-![Main Page](public/screenshots/main_page.png)
+![Main Page](https://raw.githubusercontent.com/OlaStrzelczyk/Projekt_React_Kino/main/kino-frontend/kino-frontend/public/screenshots/main_page.png)
 
 ### 📅 Lista seansów
-![Screening Page](public/screenshots/screening_page.png)
+![Screening Page](https://raw.githubusercontent.com/OlaStrzelczyk/Projekt_React_Kino/main/kino-frontend/kino-frontend/public/screenshots/screening_page.png)
 
 ### 🪑 Wybór miejsca
-![Choose Seat](public/screenshots/choose_seat.png)
+![Choose Seat](https://raw.githubusercontent.com/OlaStrzelczyk/Projekt_React_Kino/main/kino-frontend/kino-frontend/public/screenshots/choose_seat.png)
 
 ### 🎫 Formularz rezerwacji
-![Reservation Form](public/screenshots/reservation_form.png)
+![Reservation Form](https://raw.githubusercontent.com/OlaStrzelczyk/Projekt_React_Kino/main/kino-frontend/kino-frontend/public/screenshots/reservation_form.png)
 
 ### ✅ Potwierdzenie rezerwacji
-![Success](public/screenshots/succes_reservation.png)
+![Success](https://raw.githubusercontent.com/OlaStrzelczyk/Projekt_React_Kino/main/kino-frontend/kino-frontend/public/screenshots/succes_reservation.png)
 
 ---
 
