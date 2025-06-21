@@ -16,7 +16,6 @@ namespace CinemaReservationApi.Controllers
             _context = context;
         }
 
-        // ✅ Pobierz miejsca (opcjonalnie z filteringiem po screeningId)
         [HttpGet]
         public async Task<IActionResult> GetSeats([FromQuery] int? screeningId)
         {
@@ -40,9 +39,6 @@ namespace CinemaReservationApi.Controllers
             return BadRequest("Brakuje parametru screeningId.");
         }
 
-
-
-        // ➕ Dodaj jedno miejsce
         [HttpPost]
         public async Task<ActionResult<Seat>> Create(Seat seat)
         {
@@ -51,7 +47,6 @@ namespace CinemaReservationApi.Controllers
             return CreatedAtAction(nameof(GetSeats), new { id = seat.Id }, seat);
         }
 
-        // 🛠️ Zaktualizuj miejsce
         [HttpPut("{id}")]
         public async Task<IActionResult> Update(int id, [FromBody] Seat updatedSeat)
         {
@@ -78,8 +73,7 @@ namespace CinemaReservationApi.Controllers
 
             return Ok(seat);
         }
-
-        // ❌ Usuń miejsce
+        
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
@@ -100,7 +94,6 @@ namespace CinemaReservationApi.Controllers
             return Ok($"Miejsce o ID {id} zostało usunięte.");
         }
 
-        // 📦 Dodaj wiele miejsc jednocześnie
         [HttpPost("bulk")]
         public async Task<IActionResult> CreateMany([FromBody] List<Seat> seats)
         {
