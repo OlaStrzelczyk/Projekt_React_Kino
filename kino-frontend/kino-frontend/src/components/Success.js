@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { UserContext } from "../store/UserContext";
-import withLogger from "./withLogger"; // ⬅️ import HOC
+import withLogger from "./withLogger"; 
 import "./Success.css";
 
 function Success() {
@@ -25,5 +25,4 @@ function Success() {
   );
 }
 
-// ⬇️ owijamy komponent HOC-em
 export default withLogger(Success);
