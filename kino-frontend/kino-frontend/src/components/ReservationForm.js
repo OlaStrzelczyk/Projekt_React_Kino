@@ -2,14 +2,12 @@ import React, { useReducer } from "react";
 import "./ReservationForm.css";
 import { useParams, useNavigate } from "react-router-dom";
 
-// 🔹 Definicja początkowego stanu
 const initialState = {
   userName: "",
   email: "",
   phoneNumber: "",
 };
 
-// 🔹 Reducer do obsługi zmian w formularzu
 function formReducer(state, action) {
   return {
     ...state,
@@ -21,7 +19,6 @@ function ReservationForm() {
   const { screeningId, seatId } = useParams();
   const navigate = useNavigate();
 
-  // 🔹 useReducer zamiast useState
   const [formData, dispatch] = useReducer(formReducer, initialState);
 
   const handleChange = (e) => {
