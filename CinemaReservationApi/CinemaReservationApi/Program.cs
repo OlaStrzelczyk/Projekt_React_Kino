@@ -1,10 +1,9 @@
 using CinemaReservationApi.Data;
 using Microsoft.EntityFrameworkCore;
-using System.Text.Json.Serialization; // <-- to dodaj
+using System.Text.Json.Serialization; 
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Dodaj CORS
 builder.Services.AddCors(options =>
 {
     options.AddDefaultPolicy(policy =>
@@ -15,14 +14,13 @@ builder.Services.AddCors(options =>
     });
 });
 
-// Po³¹czenie z baz¹ danych
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 // Kontrolery i Swagger
 builder.Services.AddControllers()
     .AddJsonOptions(x =>
-        x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles); // <--- to dodaj
+        x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles); 
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -36,7 +34,6 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-// W³¹cz CORS tu¿ przed autoryzacj¹
 app.UseCors();
 
 app.UseHttpsRedirection();
