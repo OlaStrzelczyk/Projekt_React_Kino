@@ -90,11 +90,6 @@ namespace CinemaReservationApi.Controllers
             return Ok($"Seans o ID {id} został usunięty.");
         }
 
-        /// <summary>
-        /// Tworzy wiele seansów jednocześnie.
-        /// </summary>
-        /// <param name="screenings">Lista seansów do dodania</param>
-        /// <returns>Lista utworzonych seansów</returns>
         [HttpPost("bulk")]
         [ProducesResponseType(typeof(List<Screening>), 200)]
         public async Task<IActionResult> CreateMany([FromBody] List<Screening> screenings)
