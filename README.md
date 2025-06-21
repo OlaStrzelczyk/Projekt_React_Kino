@@ -7,36 +7,36 @@ A full-stack web application for managing movie reservations in a cinema. The sy
 ## 📂 Structure
 ```bash
 cinema_project/
-├── CinemaReservationApi/                 # 🎬 Backend (.NET Core Web API)
-│   ├── Controllers/                      # 📡 API endpoints
+├── CinemaReservationApi/                 # Backend (.NET Core Web API)
+│   ├── Controllers/                      # API endpoints
 │   │   ├── MoviesController.cs           # Handle movie-related requests
 │   │   ├── ScreeningsController.cs       # Manage screenings (GET, POST)
 │   │   ├── SeatsController.cs            # Seat layout and availability
 │   │   └── ReservationsController.cs     # Handle seat reservations
-│   ├── Models/                           # 🧱 Entity Framework models
+│   ├── Models/                           # Entity Framework models
 │   │   ├── Movie.cs                      # Movie entity (title, description)
 │   │   ├── Screening.cs                  # Screening (date, movie, room)
 │   │   ├── Seat.cs                       # Individual seat (row, number)
 │   │   └── Reservation.cs                # Reservation (seat, user data)
-│   ├── Data/                             # 💾 DbContext configuration
-│   ├── Migrations/                       # 🔁 EF Core migrations
-│   └── CinemaReservationApi.csproj       # 🔧 Project file
+│   ├── Data/                             # DbContext configuration
+│   ├── Migrations/                       # EF Core migrations
+│   └── CinemaReservationApi.csproj       # Project file
 │
-├── kino-frontend/                        # 💻 Frontend (React)
-│   ├── public/                           # 🌐 HTML shell and static assets
+├── kino-frontend/                        # Frontend (React)
+│   ├── public/                           # HTML shell and static assets
 │   └── src/
-│       ├── components/                   # 🧩 Reusable UI components
+│       ├── components/                   # Reusable UI components
 │       │   ├── ScreeningTiles.js         # Grid of available screenings
 │       │   ├── SeatRoom.js               # Seat selection for a screening
 │       │   ├── ReservationForm.js        # User form for booking
 │       │   └── Success.js                # Booking confirmation view
-│       ├── store/                        # 🧠 Zustand global state store
+│       ├── store/                        # Zustand global state store
 │       │   └── useFavorites.js           # Store for favorite movies
-│       ├── App.js                        # 🚦 App entry with routing
-│       ├── MovieDetails.js               # 🎥 Single movie detail page
-│       └── index.js                      # ⚙️ ReactDOM root
+│       ├── App.js                        # App entry with routing
+│       ├── MovieDetails.js               # Single movie detail page
+│       └── index.js                      #  ReactDOM root
 │
-└── README.md                             # 📘 Project documentation
+└── README.md                             # Project documentation
 ```
 
 ## 🚀 Features
