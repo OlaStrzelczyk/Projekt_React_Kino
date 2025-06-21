@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Comic Neue', cursive;
-  background-color: #ffdef2; /* kawaii róż */
+  background-color: #ffdef2; 
   color: #333;
 }
 
@@ -25,8 +25,8 @@ h1 {
 
 .movie-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* dokładnie 3 kolumny */
-  grid-template-rows: repeat(2, auto);   /* dokładnie 2 rzędy */
+  grid-template-columns: repeat(3, 1fr); 
+  grid-template-rows: repeat(2, auto);   
   gap: 30px;
   justify-content: center;
   padding: 40px;
