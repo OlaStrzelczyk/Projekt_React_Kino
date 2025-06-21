@@ -16,18 +16,12 @@ namespace CinemaReservationApi.Controllers
             _context = context;
         }
 
-        /// <summary>
-        /// Zwraca wszystkie filmy z bazy danych.
-        /// </summary>
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Movie>>> GetAll()
         {
             return await _context.Movies.ToListAsync();
         }
 
-        /// <summary>
-        /// Zwraca pojedynczy film po ID.
-        /// </summary>
         [HttpGet("{id}")]
         public async Task<ActionResult<Movie>> GetById(int id)
         {
@@ -40,10 +34,6 @@ namespace CinemaReservationApi.Controllers
             return Ok(movie);
         }
 
-
-        /// <summary>
-        /// Tworzy nowy film.
-        /// </summary>
         [HttpPost]
         public async Task<ActionResult<Movie>> Create(Movie movie)
         {
@@ -53,9 +43,6 @@ namespace CinemaReservationApi.Controllers
             return CreatedAtAction(nameof(GetAll), new { id = movie.Id }, movie);
         }
 
-        /// <summary>
-        /// Aktualizuje dane istniejącego filmu.
-        /// </summary>
         [HttpPut("{id}")]
         public async Task<IActionResult> Update(int id, Movie updatedMovie)
         {
@@ -79,9 +66,6 @@ namespace CinemaReservationApi.Controllers
             return Ok(movie);
         }
 
-        /// <summary>
-        /// Usuwa film po ID.
-        /// </summary>
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
