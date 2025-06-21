@@ -12,14 +12,14 @@
 
 .success-container h2 {
   color: #d600b4;
-  font-size: 28px; /* ↑ zwiększona czcionka */
+  font-size: 28px; 
   margin-bottom: 30px;
   font-weight: 700;
   text-shadow: 1px 1px 2px #fff0f7;
 }
 
 .success-container p {
-  font-size: 18px; /* ↑ większy tekst */
+  font-size: 18px;
   color: #5b005b;
   margin-bottom: 35px;
   line-height: 1.8;
