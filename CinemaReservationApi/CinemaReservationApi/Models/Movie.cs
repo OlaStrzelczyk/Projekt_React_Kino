@@ -13,5 +13,5 @@ public class Movie
     public string PosterUrl { get; set; } = string.Empty;
 
     [JsonIgnore] // zapobiega pętli przy serializacji
-    public List<Screening>? Screenings { get; set; } // nullable, więc niewymagane
+    public List<Screening>? Screenings { get; set; } 
 }
