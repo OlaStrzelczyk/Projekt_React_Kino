@@ -8,7 +8,7 @@ import React, {
 import { useParams } from "react-router-dom";
 import ScreeningTiles from "./components/ScreeningTiles";
 import { useForm } from "react-hook-form";
-import "./components/ScreeningTiles.css"; // ✅ poprawna ścieżka do CSS
+import "./components/ScreeningTiles.css"; 
 
 function MovieDetails() {
   const { id } = useParams();
