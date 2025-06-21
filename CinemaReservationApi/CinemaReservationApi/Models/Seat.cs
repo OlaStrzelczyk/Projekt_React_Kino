@@ -8,7 +8,7 @@ namespace CinemaReservationApi.Models
 
         public int ScreeningId { get; set; }
 
-        [JsonIgnore] // ✅ ignoruj wymaganie tego pola przy POST/PUT
+        [JsonIgnore] 
         public Screening? Screening { get; set; }
 
         public string SeatNumber { get; set; } = string.Empty;
