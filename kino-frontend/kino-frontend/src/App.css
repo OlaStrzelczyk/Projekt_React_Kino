@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Comic Neue', cursive;
+  background-color: #ffdef2; /* kawaii róż */
+  color: #333;
+}
+
+.container {
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.page-home {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #000;
+  margin-bottom: 30px;
+}
+
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* dokładnie 3 kolumny */
+  grid-template-rows: repeat(2, auto);   /* dokładnie 2 rzędy */
+  gap: 30px;
+  justify-content: center;
+  padding: 40px;
+  background-color: #ffeaf7;
+  border-radius: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+.movie-card {
+  background-color: #ffd6ec;
+  border: 2px solid #f89edb;
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  color: #3b0066;
+  box-shadow: 0 6px 12px rgba(248, 122, 194, 0.3);
+  transition: transform 0.2s, box-shadow 0.3s;
+}
+
+.movie-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(248, 122, 194, 0.4);
+}
+
+.poster {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+
+.movie-card h2 {
+  font-size: 1.5rem;
+  color: #5b0079;
+  margin-bottom: 10px;
+}
+
+.movie-card p {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.movie-card p strong {
+  color: #5b0079;
+}
+
+.favorite-btn {
+  background: linear-gradient(135deg, #ff96c5, #f9a5d1);
+  border: none;
+  border-radius: 30px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 10px rgba(248, 122, 194, 0.4);
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.favorite-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 14px rgba(248, 122, 194, 0.5);
+  background: linear-gradient(135deg, #ff70b3, #ffaad9);
+}
+
+.favorite-btn:active {
+  transform: scale(0.98);
+}
+

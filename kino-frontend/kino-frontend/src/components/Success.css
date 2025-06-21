@@ -1,0 +1,45 @@
+.success-container {
+  max-width: 700px;
+  margin: 80px auto;
+  padding: 50px 40px;
+  border: 2px solid #e48edb;
+  border-radius: 20px;
+  background: linear-gradient(145deg, #ffe4f3, #fdd9ff);
+  text-align: center;
+  box-shadow: 0 8px 24px rgba(248, 112, 192, 0.3);
+  font-family: 'Comic Neue', cursive;
+}
+
+.success-container h2 {
+  color: #d600b4;
+  font-size: 28px; /* ↑ zwiększona czcionka */
+  margin-bottom: 30px;
+  font-weight: 700;
+  text-shadow: 1px 1px 2px #fff0f7;
+}
+
+.success-container p {
+  font-size: 18px; /* ↑ większy tekst */
+  color: #5b005b;
+  margin-bottom: 35px;
+  line-height: 1.8;
+}
+
+.success-container .back-home {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 14px 30px;
+  background-color: #ff85c2;
+  color: #fff;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 14px rgba(255, 122, 185, 0.4);
+}
+
+.success-container .back-home:hover {
+  background-color: #ff6ab0;
+  transform: scale(1.06);
+  box-shadow: 0 6px 18px rgba(255, 122, 185, 0.5);
+}

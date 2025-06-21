@@ -1,0 +1,68 @@
+/* SeatRoom.css – wersja kawaii */
+
+.seat-room-container {
+  background-color: #ffeaf7;
+  padding: 40px;
+  text-align: center;
+  min-height: 100vh;
+  font-family: 'Comic Neue', 'Quicksand', sans-serif;
+}
+
+.back-link {
+  display: block;
+  margin-bottom: 20px;
+  color: #7a007a;
+  font-weight: bold;
+  font-size: 18px;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+  color: #aa00aa;
+}
+
+h2 {
+  color: #4a004a;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.screen {
+  background-color: #fba4e1;
+  padding: 20px;
+  margin: 30px auto 20px;
+  width: 90%;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 38px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.seat {
+  background-color: #fce4ec;
+  border: 2px solid #ffb6d2;
+  border-radius: 10px;
+  width: 110px;
+  height: 110px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #4a004a;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 4px 8px rgba(255, 182, 193, 0.3);
+}
+
+.seat:hover {
+  background-color: #ffcce6;
+  transform: scale(1.1);
+}
+
+.seat.reserved {
+  background-color: #e0e0e0;
+  color: #888;
+  border: 2px dashed #aaa;
+  cursor: not-allowed;
+  box-shadow: none;
+}
