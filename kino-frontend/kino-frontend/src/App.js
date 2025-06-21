@@ -11,7 +11,7 @@ import ReservationForm from "./components/ReservationForm";
 import Success from "./components/Success";
 import { useFavoritesStore } from "./store/useFavorites";
 import { UserContext } from "./store/UserContext";
-import { useLocalStorage } from "./hooks/useLocalStorage"; //  Twój hook
+import { useLocalStorage } from "./hooks/useLocalStorage"; 
 import "./App.css";
 
 function App() {
@@ -19,15 +19,12 @@ function App() {
   const listRef = useRef(null);
   const { addFavorite, favorites } = useFavoritesStore();
 
-  //  Hook do localStorage
   const [localFavCount, setLocalFavCount] = useLocalStorage("favCount", favorites.length);
 
-  //  Synchronizacja localStorage z aktualną liczbą ulubionych
   useEffect(() => {
     setLocalFavCount(favorites.length);
   }, [favorites, setLocalFavCount]);
 
-  //  Pobieranie filmów
   useEffect(() => {
     fetch("https://localhost:7162/api/Movies")
       .then((res) => {
@@ -38,12 +35,10 @@ function App() {
       .catch((err) => console.error("Błąd ładowania filmów:", err));
   }, []);
 
-  //  Sortowanie tytułów
   const sortedMovies = useMemo(() => {
     return [...movies].sort((a, b) => a.title.localeCompare(b.title));
   }, [movies]);
 
-  //  Auto scroll na górę przy zmianie
   useEffect(() => {
     if (listRef.current) {
       listRef.current.scrollIntoView({ behavior: "smooth" });
