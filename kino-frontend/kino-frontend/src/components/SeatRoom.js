@@ -32,7 +32,7 @@ function SeatRoom() {
       <div className="screen">EKRAN</div>
       <div className="seat-grid">
         {[...seats]
-          .sort((a, b) => Number(a.seatNumber) - Number(b.seatNumber)) // ✅ poprawne sortowanie numeryczne
+          .sort((a, b) => Number(a.seatNumber) - Number(b.seatNumber))
           .map((seat) => (
             <button
               key={seat.id}
