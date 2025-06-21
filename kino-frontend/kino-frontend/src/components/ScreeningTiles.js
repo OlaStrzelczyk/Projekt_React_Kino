@@ -1,4 +1,3 @@
-// src/components/ScreeningTiles.js
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./ScreeningTiles.css";
